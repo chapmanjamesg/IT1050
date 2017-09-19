@@ -22,7 +22,7 @@ namespace Lab_1
             int age = int.Parse(Console.ReadLine());
             Console.Write("True or False: Are you a US Citizen?");
             bool isCitizen = bool.Parse(Console.ReadLine());
-            bool canVote = (age >= 18) == isCitizen;
+            bool canVote = (age >= 18) && isCitizen;
             Console.WriteLine("Your full name:" + fullName);
             Console.WriteLine("Your Height in Centimeters:" + totalHeightCM);
             Console.WriteLine("Are you able to vote:" + canVote);
