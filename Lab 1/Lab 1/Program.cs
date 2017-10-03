@@ -16,8 +16,8 @@ namespace Lab_1
             int heightFeet = int.Parse(Console.ReadLine());
             Console.Write("How many inches remain?");
             double heightInches = double.Parse(Console.ReadLine());
-            double totalHeightCM;
-            totalHeightCM = (((heightFeet * 12) + heightInches) * 2.54);
+            double totalHeightIn = (heightFeet * 12) + heightInches);
+            double totalHeightCM = totalHeightIn * 2.54;
             Console.Write("How old are you?");
             int age = int.Parse(Console.ReadLine());
             Console.Write("True or False: Are you a US Citizen?");

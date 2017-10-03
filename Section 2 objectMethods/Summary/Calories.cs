@@ -1,0 +1,6 @@
+﻿namespace Summary
+{
+    class Calories
+    {
+    }
+}
