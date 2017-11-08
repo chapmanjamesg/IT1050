@@ -2,8 +2,8 @@
 {
     public class Instructor
     {
-        public string Name;
-        public string CourseName;
+        private string Name;
+        private string CourseName;
 
         public Instructor(string Name, string CourseName)
         {
@@ -11,11 +11,9 @@
             this.CourseName = CourseName;
         }
 
-        public void SetStudentGrade(Student studentName, int Grade)
+        public void SetStudentGrade(Student student, int Grade)
         {
-            studentName.Grade += Grade;
-            studentName.CourseName = CourseName;
-                       
+            student.SetGrade(Grade);                       
         }
         public void InstructorInfo()
         {

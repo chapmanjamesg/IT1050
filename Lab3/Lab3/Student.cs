@@ -2,26 +2,25 @@
 {
     public class Student
     {
-        public string Name;
-        public int Grade;
-        public string Instructor;
-        public string CourseName;
+        private string Name;
+        private int Grade;
+        private Instructor Teacher;
 
-        public Student(string Name, string Instructor)
+        public Student(string Name, Instructor Teacher)
         {
             this.Name = Name;
-            this.Instructor = Instructor;
-            Grade = 0;
+            this.Teacher = Teacher;
+            this.Grade = 0;
         }
 
-        public void SetGrade(Student thisStudent, int Grade)
+        public void SetGrade(int Grade)
         {
-            this.Grade += Grade;
+            this.Grade = Grade;
         }
 
         public void Print()
         {
-            System.Console.WriteLine(Name + ", Grade: " + Grade + ", taught by: " + Instructor + " teacher of: " + CourseName);
+            System.Console.WriteLine(Name + ", Grade: " + Grade + ", taught by: " + Teacher + " teacher of: " + CourseName);
         }
     }
 }
