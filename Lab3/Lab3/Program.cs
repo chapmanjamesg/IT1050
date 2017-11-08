@@ -19,9 +19,13 @@
             Mike.SetStudentGrade(Matt, 92);
 
             Jane.Print();
+            John.InstructorInfo();
             Joe.Print();
+            John.InstructorInfo();
             Mellisa.Print();
+            Mike.InstructorInfo();
             Matt.Print();
+            Mike.InstructorInfo();
 
 
         }

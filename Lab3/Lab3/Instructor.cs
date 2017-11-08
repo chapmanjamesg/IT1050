@@ -5,10 +5,10 @@
         private string Name;
         private string CourseName;
 
-        public Instructor(string Name, string CourseName)
+        public Instructor(string Name, string courseName)
         {
             this.Name = Name;
-            this.CourseName = CourseName;
+            this.CourseName = courseName;
         }
 
         public void SetStudentGrade(Student student, int Grade)

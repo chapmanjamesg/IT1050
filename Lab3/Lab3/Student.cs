@@ -20,7 +20,7 @@
 
         public void Print()
         {
-            System.Console.WriteLine(Name + ", Grade: " + Grade + ", taught by: " + Teacher + " teacher of: " + CourseName);
+            System.Console.Write(Name + ", Grade: " + Grade + ", taught by: ");
         }
     }
 }
